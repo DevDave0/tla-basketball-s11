@@ -1,6 +1,6 @@
 import React from "react";
 import BasketballStockFootage from "../assets/tapestry-basketball-highlights-2023.mp4";
-import MobileHomeImage from "../assets/tapestry_basketball_2022.png";
+import MobileHomeImage from "../assets/tapestry_basketball_2023.png";
 
 export default class Home extends React.Component {
   constructor(props) {
