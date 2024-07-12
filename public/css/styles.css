@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#header {
+  background-color: black;
+  color: white;
+}
+
+.header-links {
+  color: white;
+  text-decoration: none;
+}
+
+.header-links:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+#about-video {
+  filter: brightness(50%);
+}
+
+@media screen and (min-width: 769px) {
+  #home-image {
+    display: none;
+  }
+}
+
+.home-content,
+.away-content {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#schedule-row {
+  padding: 1rem;
+}
+
+.box,
+.teams-box {
+  border: black solid 2px;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+.home-score,
+.away-score {
+  font-size: 3rem;
+}
+
+.teams-box:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+
+th {
+  background-color: gray;
+  color: white;
+}
+
+table {
+  font-size: 0.8rem;
+}
+
+.game-stats {
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.game-row {
+  margin: 1rem;
+}
+
+.player-points,
+.team-wins {
+  background-color: lightgoldenrodyellow;
+  font-weight: 700;
+}
+
+.game-stats:hover,
+#home-button:hover,
+#away-button:hover,
+.stat-type:hover,
+.player-stat-header:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+
+#home-button,
+#away-button {
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  border: 2px solid black;
+}
+
+.stat-type {
+  border: 2px solid black;
+  padding: 3rem 8rem;
+  width: 5rem;
+  font-size: 2rem;
+}
+
+.player-stat-header {
+  border: 2px solid black;
+  padding: 0 2rem;
+  margin: 2rem;
+  border-radius: 2rem;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.stat-filter {
+  font-size: 1rem;
+}
+
+.stat-filter:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline 2px;
+}
+
+.week-filter {
+  border: 2px solid;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  padding: 5px 14px;
+  text-align: center;
+}
+
+.stat-filter-row {
+  margin-top: 1rem;
+}
+
+.team-stat-filter {
+  border: 2px solid black;
+  border-radius: 5rem;
+  margin: 2rem 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.totals-row {
+  border: 2px solid black;
+  background-color: yellow;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #008697;
+  border-color: #008697 transparent #008697 transparent;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-video {
+    display: none;
+  }
+
+  .stats-header {
+    font-size: 16px;
+    padding: 1rem 0;
+  }
+
+  .player-stats-header {
+    font-size: 10px;
+  }
+
+  .stat-filter {
+    font-size: 1rem;
+  }
+
+  .week-filter {
+    font-size: 0.75rem;
+    margin: 0.5rem;
+  }
+
+  #home-button,
+  #away-button {
+    font-size: 1rem;
+  }
+
+  .loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+}
