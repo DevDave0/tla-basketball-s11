@@ -153,7 +153,6 @@ export default class Teams extends React.Component {
         (total.points / total.games_played) * 100
           ? (total.points / total.games_played).toFixed(2)
           : "-";
-      console.log(ppg);
 
       return (
         <tr className="totals-row">
