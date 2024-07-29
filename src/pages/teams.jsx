@@ -72,7 +72,7 @@ export default class Teams extends React.Component {
 
       const ppg =
         player.points / player.games_played >= 0
-          ? player.points / player.games_played
+          ? (player.points / player.games_played).toFixed(2)
           : "-";
       if (player.team === this.state.team) {
         return (
@@ -151,8 +151,9 @@ export default class Teams extends React.Component {
           : "-";
       let ppg =
         (total.points / total.games_played) * 100
-          ? total.points / total.games_played
+          ? (total.points / total.games_played).toFixed(2)
           : "-";
+      console.log(ppg);
 
       return (
         <tr className="totals-row">
