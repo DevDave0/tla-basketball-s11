@@ -48,7 +48,7 @@ export default class Schedule extends React.Component {
         });
 
         this.setState({
-          week: 4,
+          week: 6,
           schedule: scheduleData,
           isLoading: false,
           weekGameCounts
@@ -75,10 +75,11 @@ export default class Schedule extends React.Component {
       if (row === 2) {
         secondHalf = weeks.filter((week) => week > 5 && week < 10);
         const filterNumbers = secondHalf.map((week) => {
+          const isActive = week === this.state.week ? "yellow" : "";
           return (
             <p
               key={week}
-              className="stat-filter week-filter"
+              className={`stat-filter week-filter ${isActive}`}
               onClick={this.handleClick}>
               {"W" + week}
             </p>
