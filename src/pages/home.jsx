@@ -25,7 +25,7 @@ export default class Home extends React.Component {
             Basketball League
           </h1>
           <h1 id="season-8" className="home-text">
-            Season 10
+            Season 11
           </h1>
         </div>
       </main>

@@ -1,7 +1,7 @@
 import * as google_sheets from "./constants";
 
 export const createSchedule = async () => {
-  const range = "S10 Schedule!A4:J49";
+  const range = "S11 Schedule!A4:J53";
   const full_url =
     google_sheets.base_url +
     google_sheets.sheet_id +

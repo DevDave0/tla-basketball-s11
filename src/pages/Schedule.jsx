@@ -73,7 +73,7 @@ export default class Schedule extends React.Component {
 
     const scheduleFilter = (row) => {
       if (row === 2) {
-        secondHalf = weeks.filter((week) => week > 5 && week < 10);
+        secondHalf = weeks.filter((week) => week > 4 && week < 9);
         const filterNumbers = secondHalf.map((week) => {
           const isActive = week === this.state.week ? "yellow" : "";
           return (
@@ -88,7 +88,7 @@ export default class Schedule extends React.Component {
 
         return filterNumbers;
       } else {
-        firstHalf = weeks.filter((week) => week <= 5);
+        firstHalf = weeks.filter((week) => week <= 4);
         const filterNumbers = firstHalf.map((week) => {
           return (
             <p
@@ -233,6 +233,9 @@ export default class Schedule extends React.Component {
           </div>
           <h3 className="row justify-center">Playoffs</h3>
           <div className="row stat-filter-row justify-center">
+            <p className="stat-filter week-filter" onClick={this.handleClick}>
+              {"W" + 9}
+            </p>
             <p className="stat-filter week-filter" onClick={this.handleClick}>
               {"W" + 10}
             </p>
